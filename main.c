@@ -1,22 +1,28 @@
 #include <stdio.h>  
     char arr[1024];
     int index = 0;
-    int isMingan(char x){
+    int isMingan(char x)
+    {
     int count=0;
-    for(int i=0;i<index;i++){
-        if(x==arr[i]){
+    for(int i=0;i<index;i++)
+    {
+        if(x==arr[i])
+        {
             count++;
         }
     }
-    if(count==0){
+    if(count==0)
+    {
         return 0;
-    }else{
+    }
+    else
+    {
         return 1;
     }
 }
     int main()
     {
-        printf("jinruminganzifuguanlixitong");
+        printf("jinruminganzifuguanlixitong\n");
         while(1)
         {
             printf("1---tianjiminganzifu\n");
@@ -51,17 +57,17 @@
                 scanf("%c",&x);
             }
             if (code == 3)
-        {
-            printf("xiansgusuoyouyijingtianjiademinganzifu\n");
+            {
+                printf("xiansgusuoyouyijingtianjiademinganzifu\n");
 
             for (int i = 0; i < index; i++)
             {
                 printf("%c\n", arr[i]);
             }
-            printf("dianjihuichejixu\n");
-            char x;
-            scanf("%c", &x);
-            scanf("%c", &x);
+                printf("dianjihuichejixu\n");
+                char x;
+                scanf("%c", &x);
+                scanf("%c", &x);
         }
          if (code == 4)
         {
@@ -74,7 +80,7 @@
                 {
                  break;
                 }
-                if (isMingan(arr[i]) == 1)
+                if (isMingan(neirong[i]) == 1)
                 {
                     neirong[i] = '*';
                 }
@@ -86,6 +92,11 @@
             char x;
             scanf("%c", &x);
             scanf("%c", &x);
+        }
+        if (code == 5)
+        {
+            printf("tuichuguanlixitong");
+            break;
         }
         }
         
